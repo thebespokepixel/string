@@ -20,6 +20,7 @@
     "cli",
     "string",
     "unicode",
+    "utf8",
     "pad",
     "superscript",
     "subscript"
