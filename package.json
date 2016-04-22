@@ -25,9 +25,9 @@
   "author": "Mark Griffiths <mark@thebespokepixel.com> (http://thebespokepixel.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MarkGriffiths/bespoke-string/issues"
+    "url": "https://github.com/MarkGriffiths/string/issues"
   },
-  "homepage": "https://github.com/MarkGriffiths/bespoke-string#readme",
+  "homepage": "https://github.com/MarkGriffiths/string#readme",
   "xo": {
     "semicolon": false,
     "esnext": true
@@ -37,5 +37,5 @@
       "test/*.js"
     ]
   },
-  "build_number": 7
+  "build_number": 9
 }
