@@ -1,4 +1,4 @@
-# Bespoke String Formatters  
+# string 
 >A collection of enhanced formats and utilities for strings. 
 >
 >![Project status][project-badge]
@@ -9,7 +9,9 @@
 [![Dependency Status][david-badge]][david]
 [![devDependency Status][david-dev-badge]][david-dev]
 
-Designed to curate often used Unicode string manipulations.
+## @thebespokepixel/string
+
+Designed to curate esoteric and eclectic Unicode string manipulations, plus some more generally helpful utilities.
 
 ### Install
 
