@@ -1,4 +1,4 @@
-# string 
+# @thebespokepixel/string 
 >A collection of enhanced formats and utilities for strings. 
 >
 >![Project status][project-badge]
@@ -8,8 +8,6 @@
 [![Build Status][build-badge]][travis]
 [![Dependency Status][david-badge]][david]
 [![devDependency Status][david-dev-badge]][david-dev]
-
-## @thebespokepixel/string
 
 Designed to curate esoteric and eclectic Unicode string manipulations, plus some more generally helpful utilities.
 
