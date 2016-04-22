@@ -1,6 +1,6 @@
 {
   "name": "@thebespokepixel/string",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Bespoke extensions of the String object",
   "main": "index.js",
   "dependencies": {},
@@ -35,5 +35,5 @@
       "test/*.js"
     ]
   },
-  "build_number": 175
+  "build_number": 0
 }
