@@ -1,7 +1,7 @@
 {
   "name": "@thebespokepixel/string",
-  "version": "0.1.1",
-  "description": "Bespoke extensions of the String object",
+  "version": "0.1.2",
+  "description": "Esoteric string formatting",
   "main": "index.js",
   "dependencies": {
     "term-ng": "^0.5.8"
