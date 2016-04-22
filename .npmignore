@@ -1,0 +1,8 @@
+.npmignore
+src
+test
+*.sublime*
+.editorconfig
+.travis.yml
+gulpfile.*
+*.map
