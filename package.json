@@ -18,9 +18,11 @@
   },
   "keywords": [
     "cli",
-    "banner",
-    "title",
-    "titling"
+    "string",
+    "unicode",
+    "pad",
+    "superscript",
+    "subscript"
   ],
   "author": "Mark Griffiths <mark@thebespokepixel.com> (http://thebespokepixel.com/)",
   "license": "MIT",
