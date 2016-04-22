@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "Bespoke extensions of the String object",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "term-ng": "^0.5.8"
+  },
   "devDependencies": {
     "@thebespokepixel/cordial": "^0.9.1"
   },
@@ -35,5 +37,5 @@
       "test/*.js"
     ]
   },
-  "build_number": 0
+  "build_number": 7
 }
