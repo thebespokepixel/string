@@ -1,5 +1,5 @@
-# Bespoke String Extensions  
->A augmented drop-in console replacement that supports logging levels. 
+# Bespoke String Formatters  
+>A collection of enhanced formats and utilities for strings. 
 >
 >![Project status][project-badge]
 [![npm Status][npm-badge]][npm]
@@ -9,10 +9,12 @@
 [![Dependency Status][david-badge]][david]
 [![devDependency Status][david-dev-badge]][david-dev]
 
+Designed to curate often used Unicode string manipulations.
+
 ### Install
 
 ```sh
-npm install @thebespokepixel/strings --save
+npm install @thebespokepixel/string --save
 ```
 
 ### Usage
@@ -51,7 +53,7 @@ Unless the environment has `TERM_FONT=full` set (see [Term-NG][termNG]) and you 
 [build-badge]: http://img.shields.io/travis/MarkGriffiths/string.svg?branch=master&style=flat
 [david-badge]: http://img.shields.io/david/MarkGriffiths/string.svg?style=flat
 [david-dev-badge]: http://img.shields.io/david/dev/MarkGriffiths/string.svg?style=flat
-[npm-badge]: https://img.shields.io/npm/v/string.svg?style=flat
+[npm-badge]: https://img.shields.io/npm/v/@thebespokepixel/string.svg?style=flat
 [xo-badge]: https://img.shields.io/badge/code_style-XO-5ed9c7.svg
 [gitter-badge]: https://badges.gitter.im/MarkGriffiths/help.svg
 
