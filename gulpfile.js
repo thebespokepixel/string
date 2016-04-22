@@ -15,7 +15,6 @@ gulp.task('reset', cordial.version.build.reset)
 gulp.task('write', cordial.version.build.write)
 
 // Comtranspilationatting
-gulp.task('babel', ['bump', 'write'], cordial.compile.babel(['src/**/*.js'], './'))
 gulp.task('babel-format', ['bump', 'write'], cordial.format.babel(['src/**/*.js'], './'))
 
 // Tests
