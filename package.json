@@ -1,6 +1,6 @@
 {
   "name": "@thebespokepixel/string",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bespoke extensions of the String object",
   "main": "index.js",
   "dependencies": {
@@ -18,16 +18,18 @@
   },
   "keywords": [
     "cli",
-    "banner",
-    "title",
-    "titling"
+    "string",
+    "unicode",
+    "pad",
+    "superscript",
+    "subscript"
   ],
   "author": "Mark Griffiths <mark@thebespokepixel.com> (http://thebespokepixel.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MarkGriffiths/bespoke-string/issues"
+    "url": "https://github.com/MarkGriffiths/string/issues"
   },
-  "homepage": "https://github.com/MarkGriffiths/bespoke-string#readme",
+  "homepage": "https://github.com/MarkGriffiths/string#readme",
   "xo": {
     "semicolon": false,
     "esnext": true
@@ -37,5 +39,5 @@
       "test/*.js"
     ]
   },
-  "build_number": 7
+  "build_number": 0
 }

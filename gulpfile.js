@@ -15,12 +15,11 @@ gulp.task('reset', cordial.version.build.reset)
 gulp.task('write', cordial.version.build.write)
 
 // Comtranspilationatting
-gulp.task('babel', ['bump', 'write'], cordial.compile.babel(['src/**/*.js'], './'))
 gulp.task('babel-format', ['bump', 'write'], cordial.format.babel(['src/**/*.js'], './'))
 
 // Tests
 gulp.task('test', ['xo'], cordial.test.ava(['test/*']))
-gulp.task('xo', cordial.test.xo(['src/**/*.js', 'lib/**/*.js', 'index.js']))
+gulp.task('xo', cordial.test.xo(['src/**/*.js']))
 
 // Git
 gulp.task('commit', cordial.git.commitAll)

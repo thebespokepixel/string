@@ -30,10 +30,10 @@ exports.pad = (string_, char_, length_) => {
 	return length_ > 0 ? (char_.repeat(length_) + string_).slice(-length_) : (string_ + char_.repeat(-length_)).slice(0, -length_)
 }
 
-exports.toSub = string_ => {
+exports.toSubscript = string_ => {
 	return typist(string_, termNG.font.enhanced ? subScript : 'basic')
 }
 
-exports.toSuper = string_ => {
+exports.toSuperscript = string_ => {
 	return typist(string_, termNG.font.enhanced ? superScript : 'basic')
 }
