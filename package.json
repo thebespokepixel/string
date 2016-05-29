@@ -2,15 +2,16 @@
   "name": "@thebespokepixel/string",
   "version": "0.1.3",
   "description": "Esoteric string formatting",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "jsnext:main:": "lib/index-es6.js",
   "dependencies": {
-    "term-ng": "^0.5.8"
+    "term-ng": "*"
   },
   "devDependencies": {
-    "@thebespokepixel/cordial": "^0.9.1"
+    "@thebespokepixel/cordial": "github:MarkGriffiths/cordial#develop"
   },
   "scripts": {
-    "test": "ava"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -40,5 +41,8 @@
       "test/*.js"
     ]
   },
-  "build_number": 0
+  "buildNumber": 8,
+  "engines": {
+    "node": ">=4.0 <7.0"
+  }
 }

@@ -1,8 +1,4 @@
 .npmignore
-src
-test
-*.sublime*
+test/
 .editorconfig
 .travis.yml
-gulpfile.*
-*.map

@@ -16,15 +16,3 @@ test(`Pangram → ᵀʰᵉ/ᴛₕₑ`, t => {
 	t.is(bString.toSuperscript(pangram), 'ᵀʰᵉ ᵍᵘⁱᶜᵏ ᵇʳᵒʷⁿ ᶠᵒˣ ʲᵘᵐᵖˢ ᵒᵛᵉʳ ᵗʰᵉ ˡᵃᶻʸ ᵈᵒᵍ⋅')
 })
 
-test(`Basic padding 12345/◌ 10 chars (left pad)`, t => {
-	t.is(bString.pad('12345', ' ', 10), '     12345')
-})
-
-test(`Basic padding 12345/◌ -10 chars (right pad)`, t => {
-	t.is(bString.pad('12345', ' ', -10), '12345     ')
-})
-
-test(`Long arrow padding →/– 8 chars`, t => {
-	t.is(bString.pad('→', '–', 8), '–––––––→')
-})
-
