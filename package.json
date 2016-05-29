@@ -41,7 +41,7 @@
       "test/*.js"
     ]
   },
-  "buildNumber": 8,
+  "buildNumber": 0,
   "engines": {
     "node": ">=4.0 <7.0"
   }
