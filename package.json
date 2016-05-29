@@ -1,6 +1,6 @@
 {
   "name": "@thebespokepixel/string",
-  "version": "0.1.3",
+  "version": "0.2.0-0",
   "description": "Esoteric string formatting",
   "main": "lib/index.js",
   "jsnext:main:": "lib/index-es6.js",
