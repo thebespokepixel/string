@@ -1,6 +1,0 @@
-.npmignore
-test/
-src/
-.editorconfig
-.travis.yml
-*.sublime*
