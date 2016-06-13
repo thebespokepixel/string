@@ -2,7 +2,7 @@
   "name": "@thebespokepixel/string",
   "version": "0.2.0-0",
   "description": "Esoteric string formatting",
-  "main": "lib/index.js",
+  "main": "index.js",
   "jsnext:main:": "lib/index-es6.js",
   "dependencies": {
     "term-ng": "*"
@@ -47,7 +47,7 @@
       "test/*.js"
     ]
   },
-  "buildNumber": 4,
+  "buildNumber": 5,
   "engines": {
     "node": ">=4.0 <7.0"
   },
