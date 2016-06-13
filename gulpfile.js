@@ -13,7 +13,7 @@ gulp.task('bundle', cordial.macro({
 
 gulp.task('master', cordial.macro({
 	master: true,
-	source: 'src/lib/index.es6'
+	source: 'src/index.es6'
 }).bundle())
 
 // Tests
