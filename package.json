@@ -1,14 +1,14 @@
 {
   "name": "@thebespokepixel/string",
-  "version": "0.2.0-0",
+  "version": "0.2.0",
   "description": "Esoteric string formatting",
-  "main": "lib/index.js",
+  "main": "index.js",
   "jsnext:main:": "lib/index-es6.js",
   "dependencies": {
     "term-ng": "*"
   },
   "devDependencies": {
-    "@thebespokepixel/cordial": "github:MarkGriffiths/cordial#develop"
+    "@thebespokepixel/cordial": "beta"
   },
   "scripts": {
     "test": "gulp test"
@@ -17,6 +17,12 @@
     "type": "git",
     "url": "git+https://github.com/MarkGriffiths/string.git"
   },
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib/*.js"
+  ],
   "keywords": [
     "cli",
     "string",
@@ -44,5 +50,6 @@
   "buildNumber": 0,
   "engines": {
     "node": ">=4.0 <7.0"
-  }
+  },
+  "jsnext:main": "lib/index-es6.js"
 }
