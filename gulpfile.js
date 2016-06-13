@@ -7,9 +7,9 @@ const gulp = require('gulp')
 const cordial = require('@thebespokepixel/cordial')({})
 
 // transpilation/formatting
-gulp.task('bundle', gulp.parallel(cordial.macro({
+gulp.task('bundle', cordial.macro({
 	source: 'src/index.es6'
-}).bundler()))
+}).bundle())
 
 // Tests
 gulp.task('ava', cordial.test().ava(['test/*.js']))
