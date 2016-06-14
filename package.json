@@ -3,12 +3,13 @@
   "version": "0.2.0",
   "description": "Esoteric string formatting",
   "main": "index.js",
-  "jsnext:main:": "lib/index-es6.js",
+  "jsnext:main": "lib/index-es6.js",
   "dependencies": {
+    "boxen": "^0.6.0",
     "term-ng": "*"
   },
   "devDependencies": {
-    "@thebespokepixel/cordial": "beta"
+    "@thebespokepixel/cordial": "*"
   },
   "scripts": {
     "test": "gulp test"
@@ -17,11 +18,9 @@
     "type": "git",
     "url": "git+https://github.com/MarkGriffiths/string.git"
   },
-  "directories": {
-    "lib": "lib"
-  },
   "files": [
-    "lib/*.js"
+    "index.js",
+    "lib/*"
   ],
   "keywords": [
     "cli",
@@ -43,13 +42,13 @@
     "esnext": true
   },
   "ava": {
+    "verbose": true,
     "files": [
       "test/*.js"
     ]
   },
-  "buildNumber": 0,
+  "buildNumber": 76,
   "engines": {
     "node": ">=4.0 <7.0"
-  },
-  "jsnext:main": "lib/index-es6.js"
+  }
 }
