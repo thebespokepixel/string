@@ -51,7 +51,7 @@ class BespokeString extends String {
 
 	asEmoji() {
 		// Totally naïve implentation right now, just pad wide emoji chars with a space.
-		return new BespokeString(`${this} `, this)
+		return new BespokeString(`${this} `).original(this)
 	}
 
 	inBox(options_) {
