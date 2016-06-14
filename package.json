@@ -12,7 +12,7 @@
     "@thebespokepixel/cordial": "*"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "xo && ava"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,9 @@
   },
   "homepage": "https://github.com/MarkGriffiths/string#readme",
   "xo": {
+    "ignores": [
+      "lib/*.js"
+    ],
     "semicolon": false,
     "esnext": true
   },
@@ -47,7 +50,7 @@
       "test/*.js"
     ]
   },
-  "buildNumber": 1,
+  "buildNumber": 2,
   "engines": {
     "node": ">=4.0 <7.0"
   }
