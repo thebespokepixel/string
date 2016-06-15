@@ -1,6 +1,6 @@
 {
   "name": "@thebespokepixel/string",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Esoteric string formatting",
   "main": "index.js",
   "jsnext:main": "lib/index-es6.js",
@@ -10,7 +10,10 @@
   },
   "devDependencies": {
     "@thebespokepixel/cordial": "*",
-    "greenkeeper-postpublish": "^1.0.0"
+    "ava": "^0.15.2",
+    "greenkeeper-postpublish": "^1.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "xo": "^0.16.0"
   },
   "scripts": {
     "test": "xo && ava",
