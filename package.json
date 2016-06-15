@@ -1,6 +1,6 @@
 {
   "name": "@thebespokepixel/string",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Esoteric string formatting",
   "main": "index.js",
   "jsnext:main": "lib/index-es6.js",
@@ -9,10 +9,12 @@
     "term-ng": "*"
   },
   "devDependencies": {
-    "@thebespokepixel/cordial": "*"
+    "@thebespokepixel/cordial": "*",
+    "greenkeeper-postpublish": "^1.0.0"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "xo && ava",
+    "postpublish": "greenkeeper-postpublish"
   },
   "repository": {
     "type": "git",
@@ -38,6 +40,9 @@
   },
   "homepage": "https://github.com/MarkGriffiths/string#readme",
   "xo": {
+    "ignores": [
+      "lib/*.js"
+    ],
     "semicolon": false,
     "esnext": true
   },

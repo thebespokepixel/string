@@ -2,11 +2,16 @@
 	@thebespokepixel/string
 	Esoteric string formatting
 */
+/* eslint no-useless-constructor: 0 */
 
 import termNG from 'term-ng'
 import boxen from 'boxen'
 
-class BespokeString extends String {
+class BespokeString {
+	constructor(string_) {
+		this._string = String(string_)
+	}
+
 	charSets(set_) {
 		return {
 			basic: '0123456789+-=:. abcdefghijklmnopqrstuvwxyz()ABCDEFGHIJKLMNOPQRSTUVWXYZ/|',
@@ -21,16 +26,16 @@ class BespokeString extends String {
 	}
 
 	typist(printer_) {
-		return (this._original ? this._original : this)
+		return (this._original ? this._original.valueOf() : this.valueOf())
 			.split('')
 			.map(char_ => printer_(char_))
 			.join('')
 	}
 
 	pad(char_, length_) {
-		return (length_ > 0) ?
-			(char_.repeat(length_) + this).slice(-length_) :
-			(this + char_.repeat(-length_)).slice(0, -length_)
+		return new BespokeString((length_ > 0) ?
+			(this + char_.repeat(length_)).slice(0, length_) :
+			(char_.repeat(-length_) + this).slice(length_))
 	}
 
 	toSub() {
@@ -51,11 +56,11 @@ class BespokeString extends String {
 
 	asEmoji() {
 		// Totally naïve implentation right now, just pad wide emoji chars with a space.
-		return new BespokeString(`${this} `, this)
+		return new BespokeString(`${this} `).original(this)
 	}
 
 	inBox(options_) {
-		return new BespokeString(boxen(this, Object.assign({
+		return new BespokeString(boxen(this.valueOf(), Object.assign({
 			borderColor: 'blue',
 			borderStyle: 'round',
 			dimBorder: true,
@@ -71,6 +76,14 @@ class BespokeString extends String {
 			}
 		}, options_)), this)
 	}
+
+	valueOf() {
+		return this._string
+	}
+
+	toString() {
+		return this._string.toString()
+	}
 }
 
 function bespokeString(string_) {
@@ -78,7 +91,7 @@ function bespokeString(string_) {
 }
 
 function pad(string_, char_, length_) {
-	return bespokeString(string_).pad(char_, length_).toString()
+	return new BespokeString(string_).pad(char_, length_).toString()
 }
 
 function box(string_, options_) {
