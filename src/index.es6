@@ -32,7 +32,7 @@ class BespokeString {
 			.join('')
 	}
 
-	pad(char_, length_) {
+	pad(length_ = 8, char_ = ' ') {
 		return new BespokeString((length_ > 0) ?
 			(this + char_.repeat(length_)).slice(0, length_) :
 			(char_.repeat(-length_) + this).slice(length_))
@@ -59,7 +59,7 @@ class BespokeString {
 		return new BespokeString(`${this} `).original(this)
 	}
 
-	inBox(options_) {
+	inBox(options_ = {}) {
 		return new BespokeString(boxen(this.valueOf(), Object.assign({
 			borderColor: 'blue',
 			borderStyle: 'round',
@@ -90,8 +90,8 @@ function bespokeString(string_) {
 	return new BespokeString(string_)
 }
 
-function pad(string_, char_, length_) {
-	return new BespokeString(string_).pad(char_, length_).toString()
+function pad(string_, length_, char_) {
+	return new BespokeString(string_).pad(length_, char_).toString()
 }
 
 function box(string_, options_) {
