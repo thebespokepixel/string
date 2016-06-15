@@ -9,10 +9,12 @@
     "term-ng": "*"
   },
   "devDependencies": {
-    "@thebespokepixel/cordial": "*"
+    "@thebespokepixel/cordial": "*",
+    "greenkeeper-postpublish": "^1.0.0"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && ava",
+    "postpublish": "greenkeeper-postpublish"
   },
   "repository": {
     "type": "git",
