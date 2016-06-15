@@ -9,7 +9,7 @@
     "term-ng": "*"
   },
   "devDependencies": {
-    "@thebespokepixel/cordial": "*",
+    "@thebespokepixel/cordial": "0.13.5",
     "greenkeeper-postpublish": "^1.0.0"
   },
   "scripts": {
