@@ -34,8 +34,8 @@ class BespokeString {
 
 	pad(char_, length_) {
 		return new BespokeString((length_ > 0) ?
-			(char_.repeat(length_) + this).slice(-length_) :
-			(this + char_.repeat(-length_)).slice(0, -length_))
+			(this + char_.repeat(length_)).slice(0, length_) :
+			(char_.repeat(-length_) + this).slice(length_))
 	}
 
 	toSub() {
