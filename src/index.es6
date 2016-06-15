@@ -2,11 +2,16 @@
 	@thebespokepixel/string
 	Esoteric string formatting
 */
+/* eslint no-useless-constructor: 0 */
 
 import termNG from 'term-ng'
 import boxen from 'boxen'
 
 class BespokeString extends String {
+	constructor(string_) {
+		super(string_)
+	}
+
 	charSets(set_) {
 		return {
 			basic: '0123456789+-=:. abcdefghijklmnopqrstuvwxyz()ABCDEFGHIJKLMNOPQRSTUVWXYZ/|',
