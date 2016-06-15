@@ -2,12 +2,12 @@
 >A collection of enhanced formats and utilities for strings. 
 >
 >![Project status][project-badge]
-[![npm Status][npm-badge]][npm]
-[![XO code style][xo-badge]][xo]
-[![Chat on Gitter][gitter-badge]][gitter]  
 [![Build Status][build-badge]][travis]
 [![Dependency Status][david-badge]][david]
-[![devDependency Status][david-dev-badge]][david-dev]
+[![devDependency Status][david-dev-badge]][david-dev]  
+[![npm Status][npm-badge]][npm]
+[![XO code style][xo-badge]][xo]
+[![Chat on Gitter][gitter-badge]][gitter]
 
 Designed to curate esoteric and eclectic Unicode string manipulations, plus some more generally helpful utilities.
 
