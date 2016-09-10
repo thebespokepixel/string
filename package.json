@@ -5,7 +5,7 @@
   "main": "index.js",
   "jsnext:main": "lib/index-es6.js",
   "dependencies": {
-    "boxen": "^0.6.0",
+    "boxen": "^0.8.1",
     "term-ng": "*"
   },
   "devDependencies": {
