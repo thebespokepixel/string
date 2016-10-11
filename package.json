@@ -13,7 +13,7 @@
     "ava": "^0.15.2",
     "greenkeeper-postpublish": "^1.0.0",
     "gulp": "github:gulpjs/gulp#4.0",
-    "xo": "^0.16.0"
+    "xo": "^0.17.0"
   },
   "scripts": {
     "test": "xo && ava",
