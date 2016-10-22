@@ -6,8 +6,13 @@ import termNG from 'term-ng'
 import boxen from 'boxen'
 
 class BespokeString {
-	constructor(string_) {
-		this._string = String(string_)
+	/**
+	 * Contruct a BespokeString instance.
+	 * @param  {String} str The string content.
+	 * @return {BespokeString} The BespokeString instance.
+	 */
+	constructor(str) {
+		this._string = String(str)
 	}
 
 	charSets(set_) {
@@ -30,12 +35,22 @@ class BespokeString {
 			.join('')
 	}
 
-	pad(length_ = 8, char_ = ' ') {
-		return new BespokeString((length_ > 0) ?
-			(this + char_.repeat(length_)).slice(0, length_) :
-			(char_.repeat(-length_) + this).slice(length_))
+	/**
+	 * Pad the contents.
+	 * @param  {Number} length [description]
+	 * @param  {String} char   [description]
+	 * @return {BespokeString} A BespokeString instance.
+	 */
+	pad(length = 8, char = ' ') {
+		return new BespokeString((length > 0) ?
+			(this + char.repeat(length)).slice(0, length) :
+			(char.repeat(-length) + this).slice(length))
 	}
 
+	/**
+	 * Transform the contents to subscript characters.
+	 * @return {BespokeString} A BespokeString instance.
+	 */
 	toSub() {
 		const setOut = termNG.font.enhanced ? this.charSets('sub') : this.charSets('basic')
 		return new BespokeString(this.typist(char_ => {
@@ -44,6 +59,10 @@ class BespokeString {
 		})).original(this)
 	}
 
+	/**
+	 * Transform the contents to superscript characters.
+	 * @return {BespokeString} A BespokeString instance.
+	 */
 	toSuper() {
 		const setOut = termNG.font.enhanced ? this.charSets('super') : this.charSets('basic')
 		return new BespokeString(this.typist(char_ => {
@@ -52,11 +71,22 @@ class BespokeString {
 		})).original(this)
 	}
 
+	/**
+	 * Print Emoji characters.
+	 *
+	 * Totally naïve implentation right now, just pad wide emoji chars with a space.
+	 * @return {BespokeString} A BespokeString instance.
+	 */
 	asEmoji() {
 		// Totally naïve implentation right now, just pad wide emoji chars with a space.
 		return new BespokeString(`${this} `).original(this)
 	}
 
+	/**
+	 * Print the content as a graphic box.
+	 * @param  {Object} options_ Boxen options.
+	 * @return {BespokeString} A BespokeString instance.
+	 */
 	inBox(options_ = {}) {
 		return new BespokeString(boxen(this.valueOf(), Object.assign({
 			borderColor: 'blue',
@@ -84,28 +114,61 @@ class BespokeString {
 	}
 }
 
-function bespokeString(string_) {
-	return new BespokeString(string_)
+/**
+ * Helper method for creating a BespokeString instance
+ * @param  {String} str - String content.
+ * @return {BespokeString} A BespokeString instance.
+ */
+function bespokeString(str) {
+	return new BespokeString(str)
 }
 
-function pad(string_, length_, char_) {
-	return new BespokeString(string_).pad(length_, char_).toString()
+/**
+ * Helper method for padding a string.
+ * @param  {String} str    The string to pad.
+ * @param  {Number} length Target length.
+ * @param  {String} char   Character to use for pad.
+ * @return {String} The padded string.
+ */
+function pad(str, length, char) {
+	return new BespokeString(str).pad(length, char).toString()
 }
 
-function box(string_, options_) {
-	return bespokeString(string_).inBox(options_).toString()
+/**
+ * Helper method for creating a visual box (using boxen)
+ * @param  {String} str     Box content.
+ * @param  {Object} options Boxen options.
+ * @return {String} The contructed box.
+ */
+function box(str, options) {
+	return bespokeString(str).inBox(options).toString()
 }
 
-function toSubscript(string_) {
-	return bespokeString(string_).toSub().toString()
+/**
+ * Helper method from creating a simple Unicode subscript representation.
+ * @param  {String} str The string to transform to subscript.
+ * @return {String} The subscript string.
+ */
+function toSubscript(str) {
+	return bespokeString(str).toSub().toString()
 }
 
-function toSuperscript(string_) {
-	return bespokeString(string_).toSuper().toString()
+/**
+ * Helper method from creating a simple Unicode superscript representation.
+ * @param  {String} str The string to transform to superscript.
+ * @return {String} The superscript string.
+ */
+function toSuperscript(str) {
+	return bespokeString(str).toSuper().toString()
 }
 
-function emoji(string_) {
-	return bespokeString(string_).asEmoji().toString()
+/**
+ * Helper method from creating a wide Emoji character.
+ * @param  {String} str The emoji to print.
+ * @return {String} The Emoji string.
+ */
+function emoji(str) {
+	return bespokeString(str).asEmoji().toString()
 }
 
 export {BespokeString, bespokeString, pad, box, toSubscript, toSuperscript, emoji}
