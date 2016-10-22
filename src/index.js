@@ -35,6 +35,14 @@ class BespokeString {
 			.join('')
 	}
 
+	toSuperSub(set) {
+		const setOut = termNG.font.enhanced ? this.charSets(set) : this.charSets('basic')
+		return new BespokeString(this.typist(char_ => {
+			const subIndx = this.charSets('basic').indexOf(char_)
+			return subIndx >= 0 ? setOut[subIndx] : char_
+		})).original(this)
+	}
+
 	/**
 	 * Pad the contents.
 	 * @param  {Number} length [description]
@@ -52,11 +60,7 @@ class BespokeString {
 	 * @return {BespokeString} A BespokeString instance.
 	 */
 	toSub() {
-		const setOut = termNG.font.enhanced ? this.charSets('sub') : this.charSets('basic')
-		return new BespokeString(this.typist(char_ => {
-			const subIndx = this.charSets('basic').indexOf(char_)
-			return subIndx >= 0 ? setOut[subIndx] : char_
-		})).original(this)
+		return this.toSuperSub('sub')
 	}
 
 	/**
@@ -64,11 +68,7 @@ class BespokeString {
 	 * @return {BespokeString} A BespokeString instance.
 	 */
 	toSuper() {
-		const setOut = termNG.font.enhanced ? this.charSets('super') : this.charSets('basic')
-		return new BespokeString(this.typist(char_ => {
-			const subIndx = this.charSets('basic').indexOf(char_)
-			return subIndx >= 0 ? setOut[subIndx] : char_
-		})).original(this)
+		return this.toSuperSub('super')
 	}
 
 	/**
