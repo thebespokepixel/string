@@ -84,10 +84,10 @@ class BespokeString {
 
 	/**
 	 * Print the content as a graphic box.
-	 * @param  {Object} options_ Boxen options.
+	 * @param  {Object} options Boxen options.
 	 * @return {BespokeString} A BespokeString instance.
 	 */
-	inBox(options_ = {}) {
+	inBox(options = {}) {
 		return new BespokeString(boxen(this.valueOf(), Object.assign({
 			borderColor: 'blue',
 			borderStyle: 'round',
@@ -102,7 +102,7 @@ class BespokeString {
 				left: 1,
 				right: 1
 			}
-		}, options_)), this)
+		}, options)), this)
 	}
 
 	valueOf() {
