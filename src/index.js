@@ -1,8 +1,6 @@
-/*
-	@thebespokepixel/string
-	Esoteric string formatting
-*/
-/* eslint no-useless-constructor: 0 */
+/* ────────────────────────╮
+ │ @thebespokepixel/string │ Esoteric string formatting
+ ╰─────────────────────────┴──────────────────────────────────────────────────── */
 
 import termNG from 'term-ng'
 import boxen from 'boxen'
