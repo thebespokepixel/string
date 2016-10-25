@@ -6,10 +6,10 @@
   "jsnext:main": "lib/index-es.js",
   "dependencies": {
     "boxen": "^0.8.1",
-    "term-ng": "0.7.3"
+    "term-ng": "0.7.4"
   },
   "devDependencies": {
-    "@thebespokepixel/cordial": "^0.17.9",
+    "@thebespokepixel/cordial": "^0.17.10",
     "ava": "^0.16.0",
     "codeclimate-test-reporter": "^0.4.0",
     "documentation": "^4.0.0-beta11",
@@ -60,7 +60,6 @@
       "index.js",
       "lib/**",
       "docs/**",
-      "src/docs/example.js",
       "test/coverage/**"
     ]
   },
@@ -123,8 +122,8 @@
       ]
     ]
   },
-  "buildNumber": 1,
+  "buildNumber": 3,
   "engines": {
-    "node": ">=4.0 <8.0"
+    "node": ">=4.0 <9.0"
   }
 }

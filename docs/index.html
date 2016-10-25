@@ -164,11 +164,14 @@
           
         </ul>
       </div>
-      <div class="badges"><p><a href="https://github.com/MarkGriffiths/string" title="Github"><img src="https://img.shields.io/badge/github-source-4E73B6.svg?style=flat" alt="Github"></a> <a href="https://travis-ci.org/MarkGriffiths/string" title="Travis"><img src="https://img.shields.io/travis/MarkGriffiths/string.svg?branch=master&amp;style=flat" alt="Travis"></a> <br></p>
+      <div class="badges"><p><a href="https://github.com/MarkGriffiths/string" title="Github"><img src="https://img.shields.io/badge/github-source-4E73B6.svg?style=flat" alt="Github"></a> <a href="https://travis-ci.org/MarkGriffiths/string" title="Travis"><img src="https://img.shields.io/travis/MarkGriffiths/string.svg?branch=master&#x26;style=flat" alt="Travis"></a> <br>
+</p>
  
-<p><a href="https://codeclimate.com/github/MarkGriffiths/string" title="Code-climate"><img src="https://codeclimate.com/github/MarkGriffiths/string/badges/gpa.svg?style=flat" alt="Code-climate"></a> <a href="https://codeclimate.com/github/MarkGriffiths/string/coverage" title="Coverage"><img src="https://codeclimate.com/github/MarkGriffiths/string/badges/coverage.svg?style=flat" alt="Coverage"></a> <br></p>
+<p><a href="https://codeclimate.com/github/MarkGriffiths/string" title="Code-climate"><img src="https://codeclimate.com/github/MarkGriffiths/string/badges/gpa.svg?style=flat" alt="Code-climate"></a> <a href="https://codeclimate.com/github/MarkGriffiths/string/coverage" title="Coverage"><img src="https://codeclimate.com/github/MarkGriffiths/string/badges/coverage.svg?style=flat" alt="Coverage"></a> <br>
+</p>
  
-<p><a href="https://david-dm.org/MarkGriffiths/string/master" title="David"><img src="https://img.shields.io/david/MarkGriffiths/string.svg?branch=master&amp;style=flat" alt="David"></a> <br></p>
+<p><a href="https://david-dm.org/MarkGriffiths/string/master" title="David"><img src="https://img.shields.io/david/MarkGriffiths/string.svg?branch=master&#x26;style=flat" alt="David"></a> <br>
+</p>
  
 <br>
 
@@ -190,17 +193,17 @@
 	
 	
 		<h4>Installation</h4>
-<pre><code>npm install --save @thebespokepixel/string
+<pre><code class="language-shell">npm install --save @thebespokepixel/string
 </code></pre>
 <h4>Example</h4>
-<pre><code>const bString = require(&#x27;@thebespokepixel/string&#x27;)
+<pre><code class="language-js">const bString = require('@thebespokepixel/string')
 
-console.log(bString.subScript(&#x27;String to print&#x27;))
+console.log(bString.subScript('String to print'))
 </code></pre>
 <h4>.pad(string, char, length)</h4>
 <p>Pads <code>string</code>, using <code>char</code> to <code>length</code> characters. If length is negative, pads the right rather than the left of <code>string</code>. If length is less than <code>string.length</code>, it will crop <code>string</code> to fit.</p>
 <h4>.toSuperscript(string) | .toSubscript(string)</h4>
-<p>Prints the string using the alternative super/sub characters available in Unicode (Such as in DejaVu Sans Mono or Source Code Pro). Superscript support is much more complete that Subscript. Unavaiable subscript characters will be printed as <code>&#x2093;</code>. The character <code>Q</code> has to be approximated.</p>
+<p>Prints the string using the alternative super/sub characters available in Unicode (Such as in DejaVu Sans Mono or Source Code Pro). Superscript support is much more complete that Subscript. Unavaiable subscript characters will be printed as <code>ₓ</code>. The character <code>Q</code> has to be approximated.</p>
 <p>TODO: Use compound Unicode overlay characters to better approximate missing chars.</p>
 <p>Unless the environment has <code>TERM_FONT=full</code> set (see <a href="https://www.npmjs.com/package/term-ng">Term-NG</a>) and you have a Unicode terminal font that supports sub/super-script characters, then it will fall back to printing normal characters.</p>
 <h5>Character set (Github display is incomplete)</h5>
@@ -224,17 +227,17 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
 </tr>
 <tr>
 <td>Superscript</td>
-<td><code>&#x2070;&sup1;&sup2;&sup3;&#x2074;&#x2075;&#x2076;&#x2077;&#x2078;&#x2079;</code></td>
-<td><code>&#x207A;&#x207B;&#x207C;&#x207C;&#x207D;&#x207E;&#x2575;&#x2575;&sdot;</code></td>
-<td><code>&#x1D43;&#x1D47;&#x1D9C;&#x1D48;&#x1D49;&#x1DA0;&#x1D4D;&#x2B0;&#x2071;&#x2B2;&#x1D4F;&#x2E1;&#x1D50;&#x207F;&#x1D52;&#x1D56;&#x1D4D;&#x2B3;&#x2E2;&#x1D57;&#x1D58;&#x1D5B;&#x2B7;&#x2E3;&#x2B8;&#x1DBB;</code></td>
-<td><code>&#x1D2C;&#x1D2E;&#x1D9C;&#x1D30;&#x1D31;&#x1DA0;&#x1D33;&#x1D34;&#x1D35;&#x1D36;&#x1D37;&#x1D38;&#x1D39;&#x1D3A;&#x1D3C;&#x1D3E;&#x1D3C;&#x1D3F;&#x2E2;&#x1D40;&#x1D41;&#x2C7D;&#x1D42;&#x2E3;&#x2B8;&#x1DBB;</code></td>
+<td><code>⁰¹²³⁴⁵⁶⁷⁸⁹</code></td>
+<td><code>⁺⁻⁼⁼⁽⁾╵╵⋅</code></td>
+<td><code>ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖᵍʳˢᵗᵘᵛʷˣʸᶻ</code></td>
+<td><code>ᴬᴮᶜᴰᴱᶠᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᴼᴿˢᵀᵁⱽᵂˣʸᶻ</code></td>
 </tr>
 <tr>
 <td>Subscript</td>
-<td><code>&#x2080;&#x2081;&#x2082;&#x2083;&#x2084;&#x2085;&#x2086;&#x2087;&#x2088;&#x2089;</code></td>
-<td><code>&#x208A;&#x208B;&#x208C;&#x208C;&#x208D;&#x208E;&#x2577;&#x2577;.</code></td>
-<td><code>&#x2090;&#x2093;&#x2093;&#x2093;&#x2091;&#x2093;&#x2093;&#x2095;&#x1D62;&#x2C7C;&#x2096;&#x2097;&#x2098;&#x2099;&#x2092;&#x209A;&#x2093;&#x1D63;&#x209B;&#x209C;&#x1D64;&#x1D65;&#x2093;&#x2093;&#x2093;&#x2093;</code></td>
-<td><code>&#x1D00;&#x299;c&#x1D05;&#x1D07;&#xA730;&#x262;&#x29C;&#x26A;&#x1D0A;&#x1D0B;&#x29F;&#x1D0D;&#x274;&#x1D0F;&#x1D18;&#x1EB;&#x280;&#xA731;&#x1D1B;&#x1D1C;&#x1D20;&#x1D21;x&#x28F;&#x1D22;</code></td>
+<td><code>₀₁₂₃₄₅₆₇₈₉</code></td>
+<td><code>₊₋₌₌₍₎╷╷.</code></td>
+<td><code>ₐₓₓₓₑₓₓₕᵢⱼₖₗₘₙₒₚₓᵣₛₜᵤᵥₓₓₓₓ</code></td>
+<td><code>ᴀʙcᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀꜱᴛᴜᴠᴡxʏᴢ</code></td>
 </tr>
 </tbody>
 </table>
@@ -251,6 +254,7 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
 	</h3>
 	
 		
+
 	
 	
 </section>
@@ -266,7 +270,7 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
       constructor  <span>→ BespokeString</span>
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/15698a628a85d47aa8e212855c8a8e7a0954fd0f/src/index.js#L14-L16">src/index.js</a>
+      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/4441e9b57f646040a4f0f6f0e2a25847cc472feb/src/index.js#L14-L16">src/index.js</a>
     
   </div>
   
@@ -333,7 +337,7 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
       pad  <span>→ BespokeString</span>
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/15698a628a85d47aa8e212855c8a8e7a0954fd0f/src/index.js#L52-L56">src/index.js</a>
+      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/4441e9b57f646040a4f0f6f0e2a25847cc472feb/src/index.js#L52-L56">src/index.js</a>
     
   </div>
   
@@ -341,7 +345,7 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
   <p>Pad the contents.</p>
 
   
-  <div class="pre p1 bg-darken-1 mt0 signature">pad(length: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>](default 8), char: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>](default &#x27; &#x27;)) → BespokeString</div>
+  <div class="pre p1 bg-darken-1 mt0 signature">pad(length: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>](default 8), char: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>](default ' ')) → BespokeString</div>
   
   
 
@@ -357,7 +361,9 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
       
         <div class="space-bottom0">
           <div>
-            <span class="code bold">length</span> <code class="quiet">([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>](default 8))</code> [description]
+            <span class="code bold">length</span> <code class="quiet">([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>](default 8))</code> [
+description
+]
 
           </div>
           
@@ -365,7 +371,9 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
       
         <div class="space-bottom0">
           <div>
-            <span class="code bold">char</span> <code class="quiet">([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>](default &#x27; &#x27;))</code> [description]
+            <span class="code bold">char</span> <code class="quiet">([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>](default ' '))</code> [
+description
+]
 
           </div>
           
@@ -408,7 +416,7 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
       toSub  <span>→ BespokeString</span>
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/15698a628a85d47aa8e212855c8a8e7a0954fd0f/src/index.js#L62-L64">src/index.js</a>
+      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/4441e9b57f646040a4f0f6f0e2a25847cc472feb/src/index.js#L62-L64">src/index.js</a>
     
   </div>
   
@@ -462,7 +470,7 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
       toSuper  <span>→ BespokeString</span>
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/15698a628a85d47aa8e212855c8a8e7a0954fd0f/src/index.js#L70-L72">src/index.js</a>
+      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/4441e9b57f646040a4f0f6f0e2a25847cc472feb/src/index.js#L70-L72">src/index.js</a>
     
   </div>
   
@@ -516,13 +524,13 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
       asEmoji  <span>→ BespokeString</span>
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/15698a628a85d47aa8e212855c8a8e7a0954fd0f/src/index.js#L80-L83">src/index.js</a>
+      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/4441e9b57f646040a4f0f6f0e2a25847cc472feb/src/index.js#L80-L83">src/index.js</a>
     
   </div>
   
 
   <p>Print Emoji characters.</p>
-<p>Totally na&iuml;ve implentation right now, just pad wide emoji chars with a space.</p>
+<p>Totally naïve implentation right now, just pad wide emoji chars with a space.</p>
 
   
   <div class="pre p1 bg-darken-1 mt0 signature">asEmoji() → BespokeString</div>
@@ -571,7 +579,7 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
       inBox  <span>→ BespokeString</span>
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/15698a628a85d47aa8e212855c8a8e7a0954fd0f/src/index.js#L90-L106">src/index.js</a>
+      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/4441e9b57f646040a4f0f6f0e2a25847cc472feb/src/index.js#L90-L106">src/index.js</a>
     
   </div>
   
@@ -638,7 +646,7 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
       bespokeString  <span>→ BespokeString</span>
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/15698a628a85d47aa8e212855c8a8e7a0954fd0f/src/index.js#L122-L124">src/index.js</a>
+      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/4441e9b57f646040a4f0f6f0e2a25847cc472feb/src/index.js#L122-L124">src/index.js</a>
     
   </div>
   
@@ -705,7 +713,7 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
       pad  <span>→ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/15698a628a85d47aa8e212855c8a8e7a0954fd0f/src/index.js#L133-L135">src/index.js</a>
+      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/4441e9b57f646040a4f0f6f0e2a25847cc472feb/src/index.js#L133-L135">src/index.js</a>
     
   </div>
   
@@ -788,7 +796,7 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
       box  <span>→ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/15698a628a85d47aa8e212855c8a8e7a0954fd0f/src/index.js#L143-L145">src/index.js</a>
+      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/4441e9b57f646040a4f0f6f0e2a25847cc472feb/src/index.js#L143-L145">src/index.js</a>
     
   </div>
   
@@ -863,7 +871,7 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
       toSubscript  <span>→ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/15698a628a85d47aa8e212855c8a8e7a0954fd0f/src/index.js#L152-L154">src/index.js</a>
+      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/4441e9b57f646040a4f0f6f0e2a25847cc472feb/src/index.js#L152-L154">src/index.js</a>
     
   </div>
   
@@ -930,7 +938,7 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
       toSuperscript  <span>→ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/15698a628a85d47aa8e212855c8a8e7a0954fd0f/src/index.js#L161-L163">src/index.js</a>
+      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/4441e9b57f646040a4f0f6f0e2a25847cc472feb/src/index.js#L161-L163">src/index.js</a>
     
   </div>
   
@@ -997,7 +1005,7 @@ console.log(bString.subScript(&#x27;String to print&#x27;))
       emoji  <span>→ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/15698a628a85d47aa8e212855c8a8e7a0954fd0f/src/index.js#L170-L172">src/index.js</a>
+      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/4441e9b57f646040a4f0f6f0e2a25847cc472feb/src/index.js#L170-L172">src/index.js</a>
     
   </div>
   
