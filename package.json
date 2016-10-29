@@ -6,7 +6,7 @@
   "jsnext:main": "lib/index-es.js",
   "dependencies": {
     "boxen": "^0.8.1",
-    "term-ng": "0.7.4"
+    "term-ng": "0.7.6"
   },
   "devDependencies": {
     "@thebespokepixel/cordial": "^0.17.10",
