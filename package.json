@@ -1,12 +1,12 @@
 {
   "name": "@thebespokepixel/string",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "description": "Esoteric string formatting",
   "main": "index.js",
   "jsnext:main": "lib/index-es.js",
   "dependencies": {
     "boxen": "^0.8.1",
-    "term-ng": "0.7.6"
+    "term-ng": "^0.7.7"
   },
   "devDependencies": {
     "@thebespokepixel/cordial": "^0.17.11",
@@ -120,7 +120,7 @@
       ]
     ]
   },
-  "buildNumber": 1,
+  "buildNumber": 0,
   "engines": {
     "node": ">=4.0 <9.0"
   }
