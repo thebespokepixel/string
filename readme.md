@@ -1,5 +1,7 @@
 # @thebespokepixel/string
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/MarkGriffiths/string.svg)](https://greenkeeper.io/)
+
 > A collection of enhanced formats and utilities for strings.
 
 ##### Status
