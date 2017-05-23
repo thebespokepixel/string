@@ -5,19 +5,19 @@
   "main": "index.js",
   "jsnext:main": "lib/index-es.js",
   "dependencies": {
-    "boxen": "^0.8.1",
+    "boxen": "^1.1.0",
     "term-ng": "^0.7.7"
   },
   "devDependencies": {
     "@thebespokepixel/cordial": "^0.17.11",
-    "ava": "^0.16.0",
+    "ava": "^0.19.1",
     "codeclimate-test-reporter": "^0.4.0",
     "documentation": "^4.0.0-beta11",
     "documentation-theme-bespoke": "^0.3.4",
     "greenkeeper-postpublish": "^1.0.1",
     "gulp": "github:gulpjs/gulp#4.0",
-    "nyc": "^8.4.0",
-    "xo": "^0.17.0"
+    "nyc": "^10.3.2",
+    "xo": "^0.18.2"
   },
   "scripts": {
     "test": "xo && nyc ava",
