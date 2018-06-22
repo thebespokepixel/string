@@ -4,6 +4,54 @@
  */
 
 const gulp = require('gulp')
+const rename = require('gulp-rename')
+const strip = require('gulp-strip-comments')
+const rollup = require('gulp-better-rollup')
+const babel = require('rollup-plugin-babel')
+
+const external = ['term-ng', 'boxen']
+
+const babelConfig = {
+	presets: [
+		['@babel/preset-env', {
+			modules: false,
+			targets: {
+				node: '8.0.0'
+			}
+		}]
+	],
+	exclude: 'node_modules/**'
+}
+
+gulp.task('cjs', () =>
+	gulp.src('src/index.js')
+		.pipe(rollup({
+			external,
+			plugins: [babel(babelConfig)]
+		}, {
+			format: 'cjs'
+		}))
+		.pipe(strip())
+		.pipe(gulp.dest('.'))
+)
+
+gulp.task('es6', () =>
+	gulp.src('src/index.js')
+		.pipe(rollup({
+			external,
+			plugins: [babel(babelConfig)]
+		}, {
+			format: 'es'
+		}))
+		.pipe(strip())
+		.pipe(rename('index.mjs'))
+		.pipe(gulp.dest('.'))
+)
+
+gulp.task('default', gulp.series('cjs', 'es6'))
+
+/*
+Old cordial version.
 const cordial = require('@thebespokepixel/cordial')()
 
 // transpilation/formatting
@@ -42,3 +90,4 @@ gulp.task('post-flow-release-start', gulp.series('start-release', 'version-relea
 
 // Default
 gulp.task('default', gulp.series('bump', 'clean', gulp.parallel('docs', 'bundle', 'readme')))
+*/

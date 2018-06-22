@@ -1,11 +1,5 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var termNG = _interopDefault(require('term-ng'));
-var boxen = _interopDefault(require('boxen'));
+import termNG from 'term-ng';
+import boxen from 'boxen';
 
 
 class BespokeString {
@@ -117,10 +111,4 @@ function emoji(str) {
   return bespokeString(str).asEmoji().toString();
 }
 
-exports.BespokeString = BespokeString;
-exports.bespokeString = bespokeString;
-exports.pad = pad;
-exports.box = box;
-exports.toSubscript = toSubscript;
-exports.toSuperscript = toSuperscript;
-exports.emoji = emoji;
+export { BespokeString, bespokeString, pad, box, toSubscript, toSuperscript, emoji };
