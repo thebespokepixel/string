@@ -46,11 +46,11 @@ Unless the environment has `TERM_FONT=full` set (see [Term-NG][termng]) and you 
 
 ##### Character set (Github display is incomplete)
 
-| Class       | Numerals     | Symbols     | Lower case                   | Upper case                   |
-| ----------- | ------------ | ----------- | ---------------------------- | ---------------------------- |
-| Basic       | `0123456789` | `+-=:()/|.` | `abcdefghijklmnopqrstuvwxyz` | `ABCDEFGHIJKLMNOPQRSTUVWXYZ` |
-| Superscript | `⁰¹²³⁴⁵⁶⁷⁸⁹` | `⁺⁻⁼⁼⁽⁾╵╵⋅` | `ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖᵍʳˢᵗᵘᵛʷˣʸᶻ` | `ᴬᴮᶜᴰᴱᶠᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᴼᴿˢᵀᵁⱽᵂˣʸᶻ` |
-| Subscript   | `₀₁₂₃₄₅₆₇₈₉` | `₊₋₌₌₍₎╷╷.` | `ₐₓₓₓₑₓₓₕᵢⱼₖₗₘₙₒₚₓᵣₛₜᵤᵥₓₓₓₓ` | `ᴀʙcᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀꜱᴛᴜᴠᴡxʏᴢ` |
+| Class       | Numerals     | Symbols    | Lower case                   | Upper case                   |
+| ----------- | ------------ | ---------- | ---------------------------- | ---------------------------- |
+| Basic       | `0123456789` | `+-=:()/.` | `abcdefghijklmnopqrstuvwxyz` | `ABCDEFGHIJKLMNOPQRSTUVWXYZ` |
+| Superscript | `⁰¹²³⁴⁵⁶⁷⁸⁹` | `⁺⁻⁼⁼⁽⁾╵⋅` | `ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖᵍʳˢᵗᵘᵛʷˣʸᶻ` | `ᴬᴮᶜᴰᴱᶠᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᴼᴿˢᵀᵁⱽᵂˣʸᶻ` |
+| Subscript   | `₀₁₂₃₄₅₆₇₈₉` | `₊₋₌₌₍₎╷.` | `ₐₓₓₓₑₓₓₕᵢⱼₖₗₘₙₒₚₓᵣₛₜᵤᵥₓₓₓₓ` | `ᴀʙcᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀꜱᴛᴜᴠᴡxʏᴢ` |
 
 [termng]: https://www.npmjs.com/package/term-ng
 
