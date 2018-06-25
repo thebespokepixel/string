@@ -9,7 +9,6 @@ class BespokeString {
 	/**
 	 * Contruct a BespokeString instance.
 	 * @param  {String} str The string content.
-	 * @return {BespokeString} The BespokeString instance.
 	 */
 	constructor(str) {
 		this._string = String(str)
