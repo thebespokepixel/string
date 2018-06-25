@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>@thebespokepixel/string 0.4.6 | Documentation</title>
+  <title>@thebespokepixel/string 0.5.1 | Documentation</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="assets/css/ace.min.css" rel="stylesheet">
   <link href="assets/fonts/TypoPRO-Hack/TypoPRO-Hack.css" type="text/css" rel="stylesheet" />
@@ -13,7 +13,7 @@
   <div class="flex">
     <div class="flex-column fixed top-0 bottom-0 px2 pt2 max-height-100 sidebar">
       <h3 class="m0 no-anchor">@thebespokepixel/string</h3>
-      <div class="mb1"><code>v0.4.6</code></div>
+      <div class="mb1"><code>v0.5.1</code></div>
       <input
         placeholder="Filter"
         id="filter-input"
@@ -167,7 +167,10 @@
       <div class="badges"><p><a href="https://github.com/MarkGriffiths/string" title="Github"><img src="https://img.shields.io/badge/github-source-4E73B6.svg?style=flat" alt="Github"></a> <a href="https://travis-ci.org/MarkGriffiths/string" title="Travis"><img src="https://img.shields.io/travis/MarkGriffiths/string.svg?branch=master&#x26;style=flat" alt="Travis"></a> <br>
 </p>
  
-<p><a href="https://codeclimate.com/github/MarkGriffiths/string" title="Code-climate"><img src="https://codeclimate.com/github/MarkGriffiths/string/badges/gpa.svg?style=flat" alt="Code-climate"></a> <a href="https://codeclimate.com/github/MarkGriffiths/string/coverage" title="Coverage"><img src="https://codeclimate.com/github/MarkGriffiths/string/badges/coverage.svg?style=flat" alt="Coverage"></a> <br>
+<p><a href="https://codeclimate.com/github/MarkGriffiths/string/maintainability" title="Code-climate"><img src="https://api.codeclimate.com/v1/badges/778e48bd070243673683/maintainability?style=flat" alt="Code-climate"></a> <br>
+</p>
+ 
+<p><a href="https://codeclimate.com/github/MarkGriffiths/string/test_coverage" title="Coverage"><img src="https://api.codeclimate.com/v1/badges/778e48bd070243673683/test_coverage?style=flat" alt="Coverage"></a> <br>
 </p>
  
 <p><a href="https://david-dm.org/MarkGriffiths/string/master" title="David"><img src="https://img.shields.io/david/MarkGriffiths/string.svg?branch=master&#x26;style=flat" alt="David"></a> <br>
@@ -191,15 +194,16 @@
 		Usage
 	</h3>
 	
+		
+
+	
 	
 		<h4>Installation</h4>
-<pre><code class="language-shell">npm install --save @thebespokepixel/string
-</code></pre>
+<pre class='hljs'>npm install --save @thebespokepixel/string</pre>
 <h4>Example</h4>
-<pre><code class="language-js">const bString = require('@thebespokepixel/string')
+<pre class='hljs'><span class="hljs-keyword">const</span> bString = <span class="hljs-built_in">require</span>(<span class="hljs-string">'@thebespokepixel/string'</span>)
 
-console.log(bString.subScript('String to print'))
-</code></pre>
+<span class="hljs-built_in">console</span>.log(bString.subScript(<span class="hljs-string">'String to print'</span>))</pre>
 <h4>.pad(string, char, length)</h4>
 <p>Pads <code>string</code>, using <code>char</code> to <code>length</code> characters. If length is negative, pads the right rather than the left of <code>string</code>. If length is less than <code>string.length</code>, it will crop <code>string</code> to fit.</p>
 <h4>.toSuperscript(string) | .toSubscript(string)</h4>
@@ -262,23 +266,28 @@ console.log(bString.subScript('String to print'))
         
       
         
-          <section class="py2 px3 mb2 clearfix bg-white rounded minishadow">
+          
+<section class='p2 mb2 clearfix bg-white minishadow'>
 
   
-  <div class="clearfix">
-    <h3 class="left m0 panel-title" id="constructor">
-      constructor  <span>→ BespokeString</span>
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='constructor'>
+      constructor
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/f3ca2ee06b027438e7a01a373f338b0637270fde/src/index.js#L14-L16">src/index.js</a>
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://MarkGriffiths@github.com/MarkGriffiths/string/blob/0cf39c076c1069ca8ffb2f687f418dfa6de7ab89/src/index.js#L13-L15'>
+      <span>src/index.js</span>
+      </a>
     
   </div>
   
 
   <p>Contruct a BespokeString instance.</p>
 
-  
-  <div class="pre p1 bg-darken-1 mt0 signature">constructor(str: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>) → BespokeString</div>
+
+  <div class='pre p1 fill-light mt0'>constructor(str: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</div>
   
   
 
@@ -287,14 +296,16 @@ console.log(bString.subScript('String to print'))
   
   
   
+  
 
   
-    <div class="py1 quiet mt1 prose-big">Parameters</div>
-    <div class="prose">
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
       
-        <div class="space-bottom0">
+        <div class='space-bottom0'>
           <div>
-            <span class="code bold">str</span> <code class="quiet">(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code> The string content.
+            <span class='code bold'>str</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+      The string content.
 
           </div>
           
@@ -305,14 +316,6 @@ console.log(bString.subScript('String to print'))
 
   
 
-  
-    
-      <div class="py1 quiet mt1 prose-big">Returns</div>
-      <code>BespokeString</code>:
-        The BespokeString instance.
-
-      
-    
   
 
   
@@ -329,23 +332,28 @@ console.log(bString.subScript('String to print'))
         
       
         
-          <section class="py2 px3 mb2 clearfix bg-white rounded minishadow">
+          
+<section class='p2 mb2 clearfix bg-white minishadow'>
 
   
-  <div class="clearfix">
-    <h3 class="left m0 panel-title" id="pad">
-      pad  <span>→ BespokeString</span>
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='pad'>
+      pad
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/f3ca2ee06b027438e7a01a373f338b0637270fde/src/index.js#L52-L56">src/index.js</a>
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://MarkGriffiths@github.com/MarkGriffiths/string/blob/0cf39c076c1069ca8ffb2f687f418dfa6de7ab89/src/index.js#L51-L55'>
+      <span>src/index.js</span>
+      </a>
     
   </div>
   
 
   <p>Pad the contents.</p>
 
-  
-  <div class="pre p1 bg-darken-1 mt0 signature">pad(length: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>](default 8), char: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>](default ' ')) → BespokeString</div>
+
+  <div class='pre p1 fill-light mt0'>pad(length: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>, char: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>) → BespokeString</div>
   
   
 
@@ -354,14 +362,17 @@ console.log(bString.subScript('String to print'))
   
   
   
+  
 
   
-    <div class="py1 quiet mt1 prose-big">Parameters</div>
-    <div class="prose">
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
       
-        <div class="space-bottom0">
+        <div class='space-bottom0'>
           <div>
-            <span class="code bold">length</span> <code class="quiet">([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>](default 8))</code> [
+            <span class='code bold'>length</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+            = <code>8</code>)</code>
+      [
 description
 ]
 
@@ -369,9 +380,11 @@ description
           
         </div>
       
-        <div class="space-bottom0">
+        <div class='space-bottom0'>
           <div>
-            <span class="code bold">char</span> <code class="quiet">([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>](default ' '))</code> [
+            <span class='code bold'>char</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+            = <code>&#39; &#39;</code>)</code>
+      [
 description
 ]
 
@@ -386,7 +399,7 @@ description
 
   
     
-      <div class="py1 quiet mt1 prose-big">Returns</div>
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>BespokeString</code>:
         A BespokeString instance.
 
@@ -408,26 +421,32 @@ description
         
       
         
-          <section class="py2 px3 mb2 clearfix bg-white rounded minishadow">
+          
+<section class='p2 mb2 clearfix bg-white minishadow'>
 
   
-  <div class="clearfix">
-    <h3 class="left m0 panel-title" id="tosub">
-      toSub  <span>→ BespokeString</span>
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tosub'>
+      toSub
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/f3ca2ee06b027438e7a01a373f338b0637270fde/src/index.js#L62-L64">src/index.js</a>
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://MarkGriffiths@github.com/MarkGriffiths/string/blob/0cf39c076c1069ca8ffb2f687f418dfa6de7ab89/src/index.js#L61-L63'>
+      <span>src/index.js</span>
+      </a>
     
   </div>
   
 
   <p>Transform the contents to subscript characters.</p>
 
-  
-  <div class="pre p1 bg-darken-1 mt0 signature">toSub() → BespokeString</div>
+
+  <div class='pre p1 fill-light mt0'>toSub() → BespokeString</div>
   
   
 
+  
   
   
   
@@ -440,7 +459,7 @@ description
 
   
     
-      <div class="py1 quiet mt1 prose-big">Returns</div>
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>BespokeString</code>:
         A BespokeString instance.
 
@@ -462,26 +481,32 @@ description
         
       
         
-          <section class="py2 px3 mb2 clearfix bg-white rounded minishadow">
+          
+<section class='p2 mb2 clearfix bg-white minishadow'>
 
   
-  <div class="clearfix">
-    <h3 class="left m0 panel-title" id="tosuper">
-      toSuper  <span>→ BespokeString</span>
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tosuper'>
+      toSuper
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/f3ca2ee06b027438e7a01a373f338b0637270fde/src/index.js#L70-L72">src/index.js</a>
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://MarkGriffiths@github.com/MarkGriffiths/string/blob/0cf39c076c1069ca8ffb2f687f418dfa6de7ab89/src/index.js#L69-L71'>
+      <span>src/index.js</span>
+      </a>
     
   </div>
   
 
   <p>Transform the contents to superscript characters.</p>
 
-  
-  <div class="pre p1 bg-darken-1 mt0 signature">toSuper() → BespokeString</div>
+
+  <div class='pre p1 fill-light mt0'>toSuper() → BespokeString</div>
   
   
 
+  
   
   
   
@@ -494,7 +519,7 @@ description
 
   
     
-      <div class="py1 quiet mt1 prose-big">Returns</div>
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>BespokeString</code>:
         A BespokeString instance.
 
@@ -516,15 +541,20 @@ description
         
       
         
-          <section class="py2 px3 mb2 clearfix bg-white rounded minishadow">
+          
+<section class='p2 mb2 clearfix bg-white minishadow'>
 
   
-  <div class="clearfix">
-    <h3 class="left m0 panel-title" id="asemoji">
-      asEmoji  <span>→ BespokeString</span>
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='asemoji'>
+      asEmoji
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/f3ca2ee06b027438e7a01a373f338b0637270fde/src/index.js#L80-L83">src/index.js</a>
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://MarkGriffiths@github.com/MarkGriffiths/string/blob/0cf39c076c1069ca8ffb2f687f418dfa6de7ab89/src/index.js#L79-L82'>
+      <span>src/index.js</span>
+      </a>
     
   </div>
   
@@ -532,11 +562,12 @@ description
   <p>Print Emoji characters.</p>
 <p>Totally naïve implentation right now, just pad wide emoji chars with a space.</p>
 
-  
-  <div class="pre p1 bg-darken-1 mt0 signature">asEmoji() → BespokeString</div>
+
+  <div class='pre p1 fill-light mt0'>asEmoji() → BespokeString</div>
   
   
 
+  
   
   
   
@@ -549,7 +580,7 @@ description
 
   
     
-      <div class="py1 quiet mt1 prose-big">Returns</div>
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>BespokeString</code>:
         A BespokeString instance.
 
@@ -571,23 +602,28 @@ description
         
       
         
-          <section class="py2 px3 mb2 clearfix bg-white rounded minishadow">
+          
+<section class='p2 mb2 clearfix bg-white minishadow'>
 
   
-  <div class="clearfix">
-    <h3 class="left m0 panel-title" id="inbox">
-      inBox  <span>→ BespokeString</span>
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='inbox'>
+      inBox
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/f3ca2ee06b027438e7a01a373f338b0637270fde/src/index.js#L90-L106">src/index.js</a>
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://MarkGriffiths@github.com/MarkGriffiths/string/blob/0cf39c076c1069ca8ffb2f687f418dfa6de7ab89/src/index.js#L89-L105'>
+      <span>src/index.js</span>
+      </a>
     
   </div>
   
 
   <p>Print the content as a graphic box.</p>
 
-  
-  <div class="pre p1 bg-darken-1 mt0 signature">inBox(options: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>](default {})) → BespokeString</div>
+
+  <div class='pre p1 fill-light mt0'>inBox(options: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>) → BespokeString</div>
   
   
 
@@ -596,14 +632,17 @@ description
   
   
   
+  
 
   
-    <div class="py1 quiet mt1 prose-big">Parameters</div>
-    <div class="prose">
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
       
-        <div class="space-bottom0">
+        <div class='space-bottom0'>
           <div>
-            <span class="code bold">options</span> <code class="quiet">([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>](default {}))</code> Boxen options.
+            <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+            = <code>{}</code>)</code>
+      Boxen options.
 
           </div>
           
@@ -616,7 +655,7 @@ description
 
   
     
-      <div class="py1 quiet mt1 prose-big">Returns</div>
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>BespokeString</code>:
         A BespokeString instance.
 
@@ -638,23 +677,28 @@ description
         
       
         
-          <section class="py2 px3 mb2 clearfix bg-white rounded minishadow">
+          
+<section class='p2 mb2 clearfix bg-white minishadow'>
 
   
-  <div class="clearfix">
-    <h3 class="left m0 panel-title" id="bespokestring">
-      bespokeString  <span>→ BespokeString</span>
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='bespokestring'>
+      bespokeString
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/f3ca2ee06b027438e7a01a373f338b0637270fde/src/index.js#L122-L124">src/index.js</a>
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://MarkGriffiths@github.com/MarkGriffiths/string/blob/0cf39c076c1069ca8ffb2f687f418dfa6de7ab89/src/index.js#L121-L123'>
+      <span>src/index.js</span>
+      </a>
     
   </div>
   
 
   <p>Helper method for creating a BespokeString instance</p>
 
-  
-  <div class="pre p1 bg-darken-1 mt0 signature">bespokeString(str: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>) → BespokeString</div>
+
+  <div class='pre p1 fill-light mt0'>bespokeString(str: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>) → BespokeString</div>
   
   
 
@@ -663,14 +707,16 @@ description
   
   
   
+  
 
   
-    <div class="py1 quiet mt1 prose-big">Parameters</div>
-    <div class="prose">
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
       
-        <div class="space-bottom0">
+        <div class='space-bottom0'>
           <div>
-            <span class="code bold">str</span> <code class="quiet">(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code> String content.
+            <span class='code bold'>str</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+      String content.
 
           </div>
           
@@ -683,7 +729,7 @@ description
 
   
     
-      <div class="py1 quiet mt1 prose-big">Returns</div>
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>BespokeString</code>:
         A BespokeString instance.
 
@@ -705,23 +751,28 @@ description
         
       
         
-          <section class="py2 px3 mb2 clearfix bg-white rounded minishadow">
+          
+<section class='p2 mb2 clearfix bg-white minishadow'>
 
   
-  <div class="clearfix">
-    <h3 class="left m0 panel-title" id="pad">
-      pad  <span>→ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='pad'>
+      pad
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/f3ca2ee06b027438e7a01a373f338b0637270fde/src/index.js#L133-L135">src/index.js</a>
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://MarkGriffiths@github.com/MarkGriffiths/string/blob/0cf39c076c1069ca8ffb2f687f418dfa6de7ab89/src/index.js#L132-L134'>
+      <span>src/index.js</span>
+      </a>
     
   </div>
   
 
   <p>Helper method for padding a string.</p>
 
-  
-  <div class="pre p1 bg-darken-1 mt0 signature">pad(str: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, length: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>, char: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>) → <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
+
+  <div class='pre p1 fill-light mt0'>pad(str: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, length: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>, char: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>) → <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
   
   
 
@@ -730,30 +781,34 @@ description
   
   
   
+  
 
   
-    <div class="py1 quiet mt1 prose-big">Parameters</div>
-    <div class="prose">
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
       
-        <div class="space-bottom0">
+        <div class='space-bottom0'>
           <div>
-            <span class="code bold">str</span> <code class="quiet">(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code> The string to pad.
+            <span class='code bold'>str</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+      The string to pad.
 
           </div>
           
         </div>
       
-        <div class="space-bottom0">
+        <div class='space-bottom0'>
           <div>
-            <span class="code bold">length</span> <code class="quiet">(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code> Target length.
+            <span class='code bold'>length</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+      Target length.
 
           </div>
           
         </div>
       
-        <div class="space-bottom0">
+        <div class='space-bottom0'>
           <div>
-            <span class="code bold">char</span> <code class="quiet">(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code> Character to use for pad.
+            <span class='code bold'>char</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+      Character to use for pad.
 
           </div>
           
@@ -766,8 +821,8 @@ description
 
   
     
-      <div class="py1 quiet mt1 prose-big">Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
         The padded string.
 
       
@@ -788,23 +843,28 @@ description
         
       
         
-          <section class="py2 px3 mb2 clearfix bg-white rounded minishadow">
+          
+<section class='p2 mb2 clearfix bg-white minishadow'>
 
   
-  <div class="clearfix">
-    <h3 class="left m0 panel-title" id="box">
-      box  <span>→ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='box'>
+      box
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/f3ca2ee06b027438e7a01a373f338b0637270fde/src/index.js#L143-L145">src/index.js</a>
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://MarkGriffiths@github.com/MarkGriffiths/string/blob/0cf39c076c1069ca8ffb2f687f418dfa6de7ab89/src/index.js#L142-L144'>
+      <span>src/index.js</span>
+      </a>
     
   </div>
   
 
   <p>Helper method for creating a visual box (using boxen)</p>
 
-  
-  <div class="pre p1 bg-darken-1 mt0 signature">box(str: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, options: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>) → <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
+
+  <div class='pre p1 fill-light mt0'>box(str: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, options: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>) → <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
   
   
 
@@ -813,22 +873,25 @@ description
   
   
   
+  
 
   
-    <div class="py1 quiet mt1 prose-big">Parameters</div>
-    <div class="prose">
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
       
-        <div class="space-bottom0">
+        <div class='space-bottom0'>
           <div>
-            <span class="code bold">str</span> <code class="quiet">(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code> Box content.
+            <span class='code bold'>str</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+      Box content.
 
           </div>
           
         </div>
       
-        <div class="space-bottom0">
+        <div class='space-bottom0'>
           <div>
-            <span class="code bold">options</span> <code class="quiet">(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code> Boxen options.
+            <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+      Boxen options.
 
           </div>
           
@@ -841,8 +904,8 @@ description
 
   
     
-      <div class="py1 quiet mt1 prose-big">Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
         The contructed box.
 
       
@@ -863,23 +926,28 @@ description
         
       
         
-          <section class="py2 px3 mb2 clearfix bg-white rounded minishadow">
+          
+<section class='p2 mb2 clearfix bg-white minishadow'>
 
   
-  <div class="clearfix">
-    <h3 class="left m0 panel-title" id="tosubscript">
-      toSubscript  <span>→ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tosubscript'>
+      toSubscript
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/f3ca2ee06b027438e7a01a373f338b0637270fde/src/index.js#L152-L154">src/index.js</a>
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://MarkGriffiths@github.com/MarkGriffiths/string/blob/0cf39c076c1069ca8ffb2f687f418dfa6de7ab89/src/index.js#L151-L153'>
+      <span>src/index.js</span>
+      </a>
     
   </div>
   
 
   <p>Helper method from creating a simple Unicode subscript representation.</p>
 
-  
-  <div class="pre p1 bg-darken-1 mt0 signature">toSubscript(str: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>) → <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
+
+  <div class='pre p1 fill-light mt0'>toSubscript(str: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>) → <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
   
   
 
@@ -888,14 +956,16 @@ description
   
   
   
+  
 
   
-    <div class="py1 quiet mt1 prose-big">Parameters</div>
-    <div class="prose">
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
       
-        <div class="space-bottom0">
+        <div class='space-bottom0'>
           <div>
-            <span class="code bold">str</span> <code class="quiet">(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code> The string to transform to subscript.
+            <span class='code bold'>str</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+      The string to transform to subscript.
 
           </div>
           
@@ -908,8 +978,8 @@ description
 
   
     
-      <div class="py1 quiet mt1 prose-big">Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
         The subscript string.
 
       
@@ -930,23 +1000,28 @@ description
         
       
         
-          <section class="py2 px3 mb2 clearfix bg-white rounded minishadow">
+          
+<section class='p2 mb2 clearfix bg-white minishadow'>
 
   
-  <div class="clearfix">
-    <h3 class="left m0 panel-title" id="tosuperscript">
-      toSuperscript  <span>→ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tosuperscript'>
+      toSuperscript
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/f3ca2ee06b027438e7a01a373f338b0637270fde/src/index.js#L161-L163">src/index.js</a>
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://MarkGriffiths@github.com/MarkGriffiths/string/blob/0cf39c076c1069ca8ffb2f687f418dfa6de7ab89/src/index.js#L160-L162'>
+      <span>src/index.js</span>
+      </a>
     
   </div>
   
 
   <p>Helper method from creating a simple Unicode superscript representation.</p>
 
-  
-  <div class="pre p1 bg-darken-1 mt0 signature">toSuperscript(str: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>) → <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
+
+  <div class='pre p1 fill-light mt0'>toSuperscript(str: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>) → <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
   
   
 
@@ -955,14 +1030,16 @@ description
   
   
   
+  
 
   
-    <div class="py1 quiet mt1 prose-big">Parameters</div>
-    <div class="prose">
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
       
-        <div class="space-bottom0">
+        <div class='space-bottom0'>
           <div>
-            <span class="code bold">str</span> <code class="quiet">(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code> The string to transform to superscript.
+            <span class='code bold'>str</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+      The string to transform to superscript.
 
           </div>
           
@@ -975,8 +1052,8 @@ description
 
   
     
-      <div class="py1 quiet mt1 prose-big">Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
         The superscript string.
 
       
@@ -997,23 +1074,28 @@ description
         
       
         
-          <section class="py2 px3 mb2 clearfix bg-white rounded minishadow">
+          
+<section class='p2 mb2 clearfix bg-white minishadow'>
 
   
-  <div class="clearfix">
-    <h3 class="left m0 panel-title" id="emoji">
-      emoji  <span>→ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='emoji'>
+      emoji
     </h3>
     
-      <a class="pl3 pr1 right rounded github" href="https://github.com/MarkGriffiths/string/blob/f3ca2ee06b027438e7a01a373f338b0637270fde/src/index.js#L170-L172">src/index.js</a>
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://MarkGriffiths@github.com/MarkGriffiths/string/blob/0cf39c076c1069ca8ffb2f687f418dfa6de7ab89/src/index.js#L169-L171'>
+      <span>src/index.js</span>
+      </a>
     
   </div>
   
 
   <p>Helper method from creating a wide Emoji character.</p>
 
-  
-  <div class="pre p1 bg-darken-1 mt0 signature">emoji(str: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>) → <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
+
+  <div class='pre p1 fill-light mt0'>emoji(str: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>) → <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
   
   
 
@@ -1022,14 +1104,16 @@ description
   
   
   
+  
 
   
-    <div class="py1 quiet mt1 prose-big">Parameters</div>
-    <div class="prose">
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
       
-        <div class="space-bottom0">
+        <div class='space-bottom0'>
           <div>
-            <span class="code bold">str</span> <code class="quiet">(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code> The emoji to print.
+            <span class='code bold'>str</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+      The emoji to print.
 
           </div>
           
@@ -1042,8 +1126,8 @@ description
 
   
     
-      <div class="py1 quiet mt1 prose-big">Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
         The Emoji string.
 
       
