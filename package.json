@@ -10,7 +10,7 @@
   ],
   "dependencies": {
     "boxen": "^1.3.0",
-    "term-ng": "^0.8.1"
+    "term-ng": "^0.8.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.51",
