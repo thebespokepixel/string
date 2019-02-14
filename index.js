@@ -7,6 +7,39 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 var termNG = _interopDefault(require('term-ng'));
 var boxen = _interopDefault(require('boxen'));
 
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+    var ownKeys = Object.keys(source);
+
+    if (typeof Object.getOwnPropertySymbols === 'function') {
+      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
 
 class BespokeString {
   constructor(str) {
@@ -38,29 +71,24 @@ class BespokeString {
     })).original(this);
   }
 
-
   pad(length = 8, char = ' ') {
     return new BespokeString(length > 0 ? (this + char.repeat(length)).slice(0, length) : (char.repeat(-length) + this).slice(length));
   }
-
 
   toSub() {
     return this.toSuperSub('sub');
   }
 
-
   toSuper() {
     return this.toSuperSub('super');
   }
-
 
   asEmoji() {
     return new BespokeString(`${this} `).original(this);
   }
 
-
   inBox(options = {}) {
-    return new BespokeString(boxen(this.valueOf(), Object.assign({
+    return new BespokeString(boxen(this.valueOf(), _objectSpread({
       borderColor: 'blue',
       borderStyle: 'round',
       dimBorder: true,
@@ -87,31 +115,25 @@ class BespokeString {
 
 }
 
-
 function bespokeString(str) {
   return new BespokeString(str);
 }
-
 
 function pad(str, length, char) {
   return new BespokeString(str).pad(length, char).toString();
 }
 
-
 function box(str, options) {
   return bespokeString(str).inBox(options).toString();
 }
-
 
 function toSubscript(str) {
   return bespokeString(str).toSub().toString();
 }
 
-
 function toSuperscript(str) {
   return bespokeString(str).toSuper().toString();
 }
-
 
 function emoji(str) {
   return bespokeString(str).asEmoji().toString();
