@@ -4,7 +4,7 @@
 
 ##### Status
 
-![Status](https://img.shields.io/badge/status-beta-blue.svg?style=flat) [![npm](https://img.shields.io/npm/v/@thebespokepixel/string.svg?style=flat&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU%2BbnBtPC90aXRsZT48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IGZpbGwtb3BhY2l0eT0iLjMiIGZpbGw9IiMwMDAiIHg9IjIiIHk9IjExIiB3aWR0aD0iMTAiIGhlaWdodD0iMiIgcng9IjEiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMiAyaDEwdjEwSDJ6Ii8%2BPHBhdGggZmlsbD0iI0MxMjEyNyIgZD0iTTMgMTFoNFY1aDJ2NmgyVjNIM3oiLz48L2c%2BPC9zdmc%2B)](https://www.npmjs.com/package/@thebespokepixel/string "npm") [![Travis](https://img.shields.io/travis/MarkGriffiths/string.svg?branch=master&style=flat)](https://travis-ci.org/MarkGriffiths/string "Travis") [![David](https://img.shields.io/david/MarkGriffiths/string.svg?branch=master&style=flat)](https://david-dm.org/MarkGriffiths/string/master "David")  
+![Status](https://img.shields.io/badge/status-beta-blue.svg?style=flat) [![npm](https://img.shields.io/npm/v/@thebespokepixel/string.svg?style=flat&logo=npm)](https://www.npmjs.com/package/@thebespokepixel/string "npm") [![Travis](https://img.shields.io/travis/MarkGriffiths/string.svg?branch=master&style=flat&logo=travis)](https://travis-ci.org/MarkGriffiths/string "Travis") [![David](https://img.shields.io/david/MarkGriffiths/string.svg?branch=master&style=flat)](https://david-dm.org/MarkGriffiths/string/master "David")  
  [![Code-climate](https://api.codeclimate.com/v1/badges/778e48bd070243673683/maintainability?style=flat)](https://codeclimate.com/github/MarkGriffiths/string/maintainability "Code-climate") [![Coverage](https://api.codeclimate.com/v1/badges/778e48bd070243673683/test_coverage?style=flat)](https://codeclimate.com/github/MarkGriffiths/string/test_coverage "Coverage") [![Snyk](https://snyk.io/test/github/MarkGriffiths/string/badge.svg?style=flat)](https://snyk.io/test/github/MarkGriffiths/string "Snyk")   
 
 ##### Developer
@@ -42,7 +42,7 @@ Prints the string using the alternative super/sub characters available in Unicod
 
 TODO: Use compound Unicode overlay characters to better approximate missing chars.
 
-Unless the environment has `TERM_FONT=full` set (see [Term-NG][termng]) and you have a Unicode terminal font that supports sub/super-script characters, then it will fall back to printing normal characters.
+Unless the environment has `TERM_FONT=full` set (see [Term-NG][termNG]) and you have a Unicode terminal font that supports sub/super-script characters, then it will fall back to printing normal characters.
 
 ##### Character set (Github display is incomplete)
 
@@ -52,7 +52,7 @@ Unless the environment has `TERM_FONT=full` set (see [Term-NG][termng]) and you 
 | Superscript | `⁰¹²³⁴⁵⁶⁷⁸⁹` | `⁺⁻⁼⁼⁽⁾╵╵⋅` | `ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖᵍʳˢᵗᵘᵛʷˣʸᶻ` | `ᴬᴮᶜᴰᴱᶠᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᴼᴿˢᵀᵁⱽᵂˣʸᶻ` |
 | Subscript   | `₀₁₂₃₄₅₆₇₈₉` | `₊₋₌₌₍₎╷╷.` | `ₐₓₓₓₑₓₓₕᵢⱼₖₗₘₙₒₚₓᵣₛₜᵤᵥₓₓₓₓ` | `ᴀʙcᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀꜱᴛᴜᴠᴡxʏᴢ` |
 
-[termng]: https://www.npmjs.com/package/term-ng
+[termNG]: https://www.npmjs.com/package/term-ng
 
 
 ## Documentation

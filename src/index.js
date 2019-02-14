@@ -87,7 +87,7 @@ class BespokeString {
 	 * @return {BespokeString} A BespokeString instance.
 	 */
 	inBox(options = {}) {
-		return new BespokeString(boxen(this.valueOf(), Object.assign({
+		return new BespokeString(boxen(this.valueOf(), {
 			borderColor: 'blue',
 			borderStyle: 'round',
 			dimBorder: true,
@@ -100,8 +100,9 @@ class BespokeString {
 				bottom: 1,
 				left: 1,
 				right: 1
-			}
-		}, options)), this)
+			},
+			...options
+		}), this)
 	}
 
 	valueOf() {

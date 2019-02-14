@@ -1,7 +1,7 @@
 import test from 'ava'
 import {emoji} from '..'
 
-test(`Emoji → 🤔`, t => {
+test('Emoji → 🤔', t => {
 	t.is(emoji('🤔'), '🤔 ')
 })
 
