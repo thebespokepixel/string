@@ -9,7 +9,7 @@
     "index.mjs"
   ],
   "dependencies": {
-    "boxen": "^2.1.0",
+    "boxen": "^3.0.0",
     "term-ng": "^0.8.4"
   },
   "devDependencies": {
