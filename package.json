@@ -1,6 +1,6 @@
 {
   "name": "@thebespokepixel/string",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "Esoteric string formatting",
   "main": "index.js",
   "module": "index.mjs",
@@ -78,8 +78,8 @@
     "name": "string",
     "providers": {
       "status": {
-        "text": "beta",
-        "color": "blue"
+        "text": "utility",
+        "color": "green"
       },
       "aux1": {
         "title": "github",
