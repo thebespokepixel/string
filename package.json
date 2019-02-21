@@ -1,6 +1,6 @@
 {
   "name": "@thebespokepixel/string",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "Esoteric string formatting",
   "main": "index.js",
   "module": "index.mjs",
@@ -9,21 +9,21 @@
     "index.mjs"
   ],
   "dependencies": {
-    "boxen": "^2.1.0",
-    "term-ng": "^0.8.4"
+    "boxen": "^3.0.0",
+    "term-ng": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
+    "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
     "acorn": "^6.1.0",
     "ava": "^1.2.1",
     "documentation": "^9.1.1",
-    "documentation-theme-bespoke": "^0.4.8",
+    "documentation-theme-bespoke": "^0.4.11",
     "gulp": "^4.0.0",
     "gulp-better-rollup": "^3.4.0",
     "gulp-rename": "^1.4.0",
     "gulp-strip-comments": "^2.5.2",
-    "nyc": "^13.2.0",
+    "nyc": "^13.3.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
@@ -78,8 +78,8 @@
     "name": "string",
     "providers": {
       "status": {
-        "text": "beta",
-        "color": "blue"
+        "text": "utility",
+        "color": "green"
       },
       "aux1": {
         "title": "github",
