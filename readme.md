@@ -4,8 +4,8 @@
 
 ##### Status
 
-![Status](https://img.shields.io/badge/status-beta-blue.svg?style=flat) [![npm](https://img.shields.io/npm/v/@thebespokepixel/string.svg?style=flat&logo=npm)](https://www.npmjs.com/package/@thebespokepixel/string "npm") [![Travis](https://img.shields.io/travis/MarkGriffiths/string.svg?branch=master&style=flat&logo=travis)](https://travis-ci.org/MarkGriffiths/string "Travis") [![David](https://img.shields.io/david/MarkGriffiths/string.svg?branch=master&style=flat)](https://david-dm.org/MarkGriffiths/string/master "David")  
- [![Code-climate](https://api.codeclimate.com/v1/badges/778e48bd070243673683/maintainability?style=flat)](https://codeclimate.com/github/MarkGriffiths/string/maintainability "Code-climate") [![Coverage](https://api.codeclimate.com/v1/badges/778e48bd070243673683/test_coverage?style=flat)](https://codeclimate.com/github/MarkGriffiths/string/test_coverage "Coverage") [![Snyk](https://snyk.io/test/github/MarkGriffiths/string/badge.svg?style=flat)](https://snyk.io/test/github/MarkGriffiths/string "Snyk")   
+![Status](https://img.shields.io/badge/status-utility-green.svg?style=flat) [![npm](https://img.shields.io/npm/v/@thebespokepixel/string.svg?style=flat&logo=npm)](https://www.npmjs.com/package/@thebespokepixel/string "npm") [![Travis](https://img.shields.io/travis/MarkGriffiths/string.svg?branch=master&style=flat&logo=travis)](https://travis-ci.org/MarkGriffiths/string "Travis") [![David](https://img.shields.io/david/MarkGriffiths/string.svg?branch=master&style=flat)](https://david-dm.org/MarkGriffiths/string/master "David")  
+ [![Code-climate](https://api.codeclimate.com/v1/badges/778e48bd070243673683/maintainability?style=flat)](https://codeclimate.com/github/MarkGriffiths/string/maintainability "Code-climate") [![Coverage](https://api.codeclimate.com/v1/badges/778e48bd070243673683/test_coverage?style=flat)](https://codeclimate.com/github/MarkGriffiths/string/test_coverage "Coverage") [![Snyk](https://img.shields.io/snyk/vulnerabilities/github/MarkGriffiths/string.svg?style=flat&logo=npm)](https://snyk.io/test/github/MarkGriffiths/string "Snyk")   
 
 ##### Developer
 
