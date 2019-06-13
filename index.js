@@ -141,8 +141,8 @@ function emoji(str) {
 
 exports.BespokeString = BespokeString;
 exports.bespokeString = bespokeString;
-exports.pad = pad;
 exports.box = box;
+exports.emoji = emoji;
+exports.pad = pad;
 exports.toSubscript = toSubscript;
 exports.toSuperscript = toSuperscript;
-exports.emoji = emoji;

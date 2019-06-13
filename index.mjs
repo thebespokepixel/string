@@ -133,4 +133,4 @@ function emoji(str) {
   return bespokeString(str).asEmoji().toString();
 }
 
-export { BespokeString, bespokeString, pad, box, toSubscript, toSuperscript, emoji };
+export { BespokeString, bespokeString, box, emoji, pad, toSubscript, toSuperscript };
