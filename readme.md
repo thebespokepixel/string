@@ -57,6 +57,6 @@ Unless the environment has `TERM_FONT=full` set (see [Term-NG][termNG]) and you 
 
 ## Documentation
 
-Full documentation can be found at [https://markgriffiths.github.io/string/][1]
+Full documentation can be found at [https://thebespokepixel.github.io/string/][1]
 
-[1]: https://markgriffiths.github.io/string/
+[1]: https://thebespokepixel.github.io/string/
