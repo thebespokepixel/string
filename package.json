@@ -1,6 +1,6 @@
 {
   "name": "@thebespokepixel/string",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "description": "Esoteric string formatting",
   "main": "index.js",
   "module": "index.mjs",
@@ -10,22 +10,22 @@
   ],
   "dependencies": {
     "boxen": "^4.1.0",
-    "term-ng": "^1.0.2"
+    "term-ng": "^1.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "ava": "^2.1.0",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "ava": "^2.2.0",
     "documentation-theme-bespoke": "^0.5.6",
     "gulp": "^4.0.2",
     "gulp-better-rollup": "^4.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-strip-comments": "^2.5.2",
     "nyc": "^14.1.1",
-    "rollup": "^1.15.3",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-commonjs": "^10.0.0",
-    "rollup-plugin-node-resolve": "^5.0.2",
+    "rollup": "^1.19.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.0.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "xo": "^0.24.0"
   },
   "scripts": {
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MarkGriffiths/string.git"
+    "url": "git+https://github.com/thebespokepixel/string.git"
   },
   "keywords": [
     "cli",
@@ -51,9 +51,9 @@
   "author": "Mark Griffiths <mark@thebespokepixel.com> (http://thebespokepixel.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MarkGriffiths/string/issues"
+    "url": "https://github.com/thebespokepixel/string/issues"
   },
-  "homepage": "https://github.com/MarkGriffiths/string#readme",
+  "homepage": "https://github.com/thebespokepixel/string#readme",
   "xo": {
     "semicolon": false,
     "esnext": true,
@@ -65,9 +65,9 @@
     ]
   },
   "badges": {
-    "github": "MarkGriffiths",
+    "github": "thebespokepixel",
     "npm": "thebespokepixel",
-    "codeclimate": "778e48bd070243673683",
+    "codeclimate": "57bf94c1bc96b928b8cd",
     "name": "string",
     "providers": {
       "status": {
@@ -78,7 +78,7 @@
         "title": "github",
         "text": "source",
         "color": "4E73B6",
-        "link": "https://github.com/MarkGriffiths/string"
+        "link": "https://github.com/thebespokepixel/string"
       }
     },
     "readme": {
@@ -101,8 +101,7 @@
         "rollup"
       ],
       "Help": [
-        "inch",
-        "gitter"
+        "inch"
       ]
     },
     "docs": [
