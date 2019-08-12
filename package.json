@@ -1,6 +1,6 @@
 {
   "name": "@thebespokepixel/string",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "description": "Esoteric string formatting",
   "main": "index.js",
   "module": "index.mjs",
