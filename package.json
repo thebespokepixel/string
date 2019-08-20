@@ -15,8 +15,8 @@
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "ava": "^2.2.0",
-    "documentation-theme-bespoke": "^1.0.0",
+    "ava": "^2.3.0",
+    "documentation-theme-bespoke": "^1.0.1",
     "gulp": "^4.0.2",
     "gulp-better-rollup": "^4.0.1",
     "gulp-rename": "^1.4.0",
