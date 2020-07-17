@@ -1,6 +1,6 @@
 {
   "name": "@thebespokepixel/string",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Esoteric string formatting",
   "main": "index.js",
   "module": "index.mjs",
@@ -101,10 +101,7 @@
       ],
       "Development Status": [
         [
-          "greenkeeper",
-          "travis-com-dev"
-        ],
-        [
+          "travis-com-dev",
           "david-dev",
           "david-devdeps-dev"
         ],
