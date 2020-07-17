@@ -57,8 +57,8 @@ function _objectSpread2(target) {
 }
 
 class BespokeString {
-  constructor(str) {
-    this._string = String(str);
+  constructor(content) {
+    this._string = String(content);
   }
 
   charSets(set_) {
@@ -130,28 +130,28 @@ class BespokeString {
 
 }
 
-function bespokeString(str) {
-  return new BespokeString(str);
+function bespokeString(content) {
+  return new BespokeString(content);
 }
 
-function pad(str, length, char) {
-  return new BespokeString(str).pad(length, char).toString();
+function pad(content, length, char) {
+  return new BespokeString(content).pad(length, char).toString();
 }
 
-function box(str, options) {
-  return bespokeString(str).inBox(options).toString();
+function box(content, options) {
+  return bespokeString(content).inBox(options).toString();
 }
 
-function toSubscript(str) {
-  return bespokeString(str).toSub().toString();
+function toSubscript(content) {
+  return bespokeString(content).toSub().toString();
 }
 
-function toSuperscript(str) {
-  return bespokeString(str).toSuper().toString();
+function toSuperscript(content) {
+  return bespokeString(content).toSuper().toString();
 }
 
-function emoji(str) {
-  return bespokeString(str).asEmoji().toString();
+function emoji(content) {
+  return bespokeString(content).asEmoji().toString();
 }
 
 exports.BespokeString = BespokeString;
