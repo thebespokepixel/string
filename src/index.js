@@ -8,10 +8,10 @@ import boxen from 'boxen'
 class BespokeString {
 	/**
 	 * Contruct a BespokeString instance.
-	 * @param  {String} str The string content.
+	 * @param  {String} content The string content.
 	 */
-	constructor(str) {
-		this._string = String(str)
+	constructor(content) {
+		this._string = String(content)
 	}
 
 	charSets(set_) {
@@ -116,59 +116,59 @@ class BespokeString {
 
 /**
  * Helper method for creating a BespokeString instance
- * @param  {String} str - String content.
+ * @param  {String} content - String content.
  * @return {BespokeString} A BespokeString instance.
  */
-function bespokeString(str) {
-	return new BespokeString(str)
+function bespokeString(content) {
+	return new BespokeString(content)
 }
 
 /**
  * Helper method for padding a string.
- * @param  {String} str    The string to pad.
+ * @param  {String} content    The string to pad.
  * @param  {Number} length Target length.
  * @param  {String} char   Character to use for pad.
  * @return {String} The padded string.
  */
-function pad(str, length, char) {
-	return new BespokeString(str).pad(length, char).toString()
+function pad(content, length, char) {
+	return new BespokeString(content).pad(length, char).toString()
 }
 
 /**
  * Helper method for creating a visual box (using boxen)
- * @param  {String} str     Box content.
+ * @param  {String} content     Box content.
  * @param  {Object} options Boxen options.
  * @return {String} The contructed box.
  */
-function box(str, options) {
-	return bespokeString(str).inBox(options).toString()
+function box(content, options) {
+	return bespokeString(content).inBox(options).toString()
 }
 
 /**
  * Helper method from creating a simple Unicode subscript representation.
- * @param  {String} str The string to transform to subscript.
+ * @param  {String} content The string to transform to subscript.
  * @return {String} The subscript string.
  */
-function toSubscript(str) {
-	return bespokeString(str).toSub().toString()
+function toSubscript(content) {
+	return bespokeString(content).toSub().toString()
 }
 
 /**
  * Helper method from creating a simple Unicode superscript representation.
- * @param  {String} str The string to transform to superscript.
+ * @param  {String} content The string to transform to superscript.
  * @return {String} The superscript string.
  */
-function toSuperscript(str) {
-	return bespokeString(str).toSuper().toString()
+function toSuperscript(content) {
+	return bespokeString(content).toSuper().toString()
 }
 
 /**
  * Helper method from creating a wide Emoji character.
- * @param  {String} str The emoji to print.
+ * @param  {String} content The emoji to print.
  * @return {String} The Emoji string.
  */
-function emoji(str) {
-	return bespokeString(str).asEmoji().toString()
+function emoji(content) {
+	return bespokeString(content).asEmoji().toString()
 }
 
 export {BespokeString, bespokeString, pad, box, toSubscript, toSuperscript, emoji}
