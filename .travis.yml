@@ -8,7 +8,6 @@ language: node_js
 node_js:
   - stable
   - 12
-  - 11
   - 10
 env:
   global:
