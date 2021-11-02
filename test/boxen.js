@@ -1,14 +1,14 @@
 import test from 'ava'
-import {bespokeString} from '..'
+import {bespokeString} from '../index.js'
 
 test('inBox → Boxed string', t => {
 	t.is(
 		bespokeString('Hello world!')
 			.inBox({
 				borderColor: null,
-				dimBorder: false
+				dimBorder: false,
 			})
 			.toString(),
-		'\n ╭──────────────────╮\n │   Hello world!   │\n ╰──────────────────╯\n'
+		'\n ╭──────────────────╮\n │   Hello world!   │\n ╰──────────────────╯\n',
 	)
 })

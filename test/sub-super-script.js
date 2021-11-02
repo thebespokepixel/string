@@ -1,5 +1,5 @@
 import test from 'ava'
-import {toSubscript, toSuperscript} from '..'
+import {toSubscript, toSuperscript} from '../index.js'
 
 test('Basic digits 123... → ¹²³⋅⋅⋅/₁₂₃...', t => {
 	t.plan(2)
