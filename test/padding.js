@@ -1,5 +1,5 @@
 import test from 'ava'
-import {bespokeString, pad} from '..'
+import {bespokeString, pad} from '../index.js'
 
 test('Basic padding 12345 with " ", -10 chars (left pad)', t => {
 	t.is(pad('12345', -10), '     12345')
